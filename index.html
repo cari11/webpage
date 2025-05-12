@@ -10,10 +10,13 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            background-color: #f4f4f4;
+            background-image: url('https://via.placeholder.com/1500x1000/ffcccc/ff6666?text=Fondo+de+Corazones');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
         header {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8);
             color: #fff;
             padding: 20px;
             text-align: center;
@@ -22,7 +25,7 @@
             margin: 0;
         }
         nav {
-            background-color: #555;
+            background-color: rgba(85, 85, 85, 0.8);
             padding: 10px;
             text-align: center;
         }
@@ -42,7 +45,7 @@
             padding: 20px;
         }
         .product {
-            background: #fff;
+            background: rgba(255, 255, 255, 0.9);
             border: 1px solid #ddd;
             border-radius: 10px;
             margin: 10px;
@@ -63,19 +66,20 @@
             color: #666;
             margin: 10px 0;
         }
-        .product button {
+        .product a {
+            display: inline-block;
             background-color: #28a745;
             color: white;
-            border: none;
+            text-decoration: none;
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
         }
-        .product button:hover {
+        .product a:hover {
             background-color: #218838;
         }
         footer {
-            background-color: #333;
+            background-color: rgba(51, 51, 51, 0.8);
             color: #fff;
             text-align: center;
             padding: 10px;
@@ -91,27 +95,27 @@
     </header>
     <nav>
         <a href="#">Inicio</a>
-        <a href="#">Productos</a>
+        <a href="#productos">Productos</a>
         <a href="#">Contacto</a>
     </nav>
-    <section class="products">
+    <section id="productos" class="products">
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 1">
             <h3>Camiseta Básica</h3>
             <p>$10.00</p>
-            <button>Comprar</button>
+            <a href="producto1.html">Ver Producto</a>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 2">
             <h3>Pantalones Jeans</h3>
             <p>$20.00</p>
-            <button>Comprar</button>
+            <a href="producto2.html">Ver Producto</a>
         </div>
         <div class="product">
             <img src="https://via.placeholder.com/200" alt="Producto 3">
             <h3>Chaqueta Elegante</h3>
             <p>$30.00</p>
-            <button>Comprar</button>
+            <a href="producto3.html">Ver Producto</a>
         </div>
     </section>
     <footer>
