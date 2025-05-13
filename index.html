@@ -145,6 +145,21 @@
     </div>
 </section>
 
-<div id="visit-counter" style="text-align: center; margin-top: 20px; font-size: 18px;">
-    Este sitio ha sido visitado <span id="counter"></span> veces.
-</div>
+<script>
+    // Obtener el contador actual desde localStorage
+    let visitCount = localStorage.getItem('page_view');
+
+    // Si no existe, inicializarlo
+    if (!visitCount) {
+        visitCount = 0;
+    }
+
+    // Incrementar el contador
+    visitCount++;
+
+    // Guardar el nuevo valor en localStorage
+    localStorage.setItem('page_view', visitCount);
+
+    // Mostrar el contador en la página
+    document.getElementById('counter').innerText = visitCount;
+</script>
