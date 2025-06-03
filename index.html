@@ -37,5 +37,19 @@
         </form>
     </div>
    <audio src="Taylor Swift - Style (Instrumental).mp3" autoplay loop hidden></audio>
+     // Utiliza localStorage para mantener el contador en el navegador
+        const contadorKey = 'contadorVisitasPagina';
+        let visitas = localStorage.getItem(contadorKey);
+        if (!visitas) {
+            visitas = 1;
+        } else {
+            visitas = parseInt(visitas) + 1;
+        }
+        localStorage.setItem(contadorKey, visitas);
+
+        // Muestra el contador en la página
+        document.getElementById('contador-visitas').textContent = 
+            `Has visitado esta página ${visitas} ${visitas == 1 ? 'vez' : 'veces'}.`;
+    </script>
 </body>
 </html>
